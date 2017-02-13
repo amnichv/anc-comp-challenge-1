@@ -1,0 +1,250 @@
+
+.boxes {
+  display: flex;
+  font-family: 'josephin sans', sans-serif;
+  color: white;
+  font-size: 60%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-family: 'josephin sans', sans-serif;
+  color: white;
+}
+
+.bio-box {
+  width: 100vw;
+  max-height: 100vw;
+  order: 2;
+  background-color: #515a82;
+  line-height: 200%;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 5px;
+  font-size: 200%;
+  margin-bottom: 3%;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: #515a82;
+  border: 2px solid white;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  display: inline-block;
+  box-shadow: none;
+  font-family: 'josephin sans', sans-serif;
+  color: white;
+  margin-top: 3%;
+  margin-right: 5%;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+button > i {
+  display: inline;
+  padding-top: 0;
+  font-size: 80%;
+}
+
+.box {
+  margin: 0px;
+  padding: 5em;
+  width: 50vw;
+  height: 50vw;
+  order: 3;
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+i {
+  display: block;
+  color: white;
+  font-size: 80%
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+p {
+  display: block;
+}
+
+.one {
+  background-color: #d689b0;
+}
+
+.two {
+  background-color: #ac79a0;
+}
+
+.three {
+  background-color: #926f95;
+}
+
+.four {
+  background-color: #6d8d9f;
+}
+
+.five {
+  background-color: #d4aaaa;
+}
+
+.img-sm-md {
+  width: 100vw;
+  height: 100vw;
+  order: 1;
+
+}
+
+.div-lg {
+  display: none;
+}
+
+.box:last-of-type {
+  width: 100vw;
+  height: 50vw;
+}
+
+.div-sm-md {
+  background-image: url('biglebowski-small.jpg');
+  width: 100vw;
+  height: 100vw;
+  order: 1;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+#img-counter {
+  padding: 0;
+  margin-right: 5px;
+  color: black;
+  float: right;
+  font-size: 28pt;
+  font-weight: bold;
+}
+
+#left {
+  display: block;
+  color: black;
+  margin-top: calc(50vw - 24px);
+  float: left;
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+#right {
+  display: inline;
+  color: black;
+  padding-top: 0;
+  margin-top: calc(50vw - 24px - 37px);
+  float: right;
+  clear: right;
+  font-size: 36pt;
+  font-weight: bold;
+}
+
+
+@media screen and (min-width:600px) and (max-width:799px) {
+
+  .bio-box {
+    width: 50vw;
+    height: 33vw;
+    font-size: 120%;
+  }
+
+  h1 {
+    font-size: 120%;
+  }
+
+  .box {
+    width: 50vw;
+    height: 33vw;
+  }
+
+  i {
+    padding-top: 20%;
+  }
+
+  .box:last-of-type {
+    width: 50vw;
+    height: 33vw;
+  }
+
+  .div-sm-md {
+    width: 100vw;
+    height: 50vw;
+    background-image: url('biglebowski-med.jpg');
+  }
+
+  .div-lg {
+    display: none;
+  }
+  #left {
+    margin-top: calc(25vw - 24px);
+    padding: 0;
+  }
+
+  #right {
+    margin-top: calc(25vw - 24px - 37px);
+  }
+}
+
+
+@media screen and (min-width:800px) {
+
+  .boxes {
+    width: 60vw;
+    float: left;
+  }
+
+  .bio-box {
+    width: 40vw;
+    height:20vw;
+  }
+
+  .box {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .div-lg {
+    display: inline-block;
+    width: 40vw;
+    height: 60vw;
+    background-size: cover;
+    background-image: url('biglebowski-lg.jpg')
+  }
+
+  .div-sm-md {
+    display: none;
+  }
+
+  .box:last-of-type {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  #left {
+    margin-top: calc(30vw - 24px);
+  }
+
+  #right {
+    margin-top: calc(30vw - 37px - 24px);
+  }
+
+}
